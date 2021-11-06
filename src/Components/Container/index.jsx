@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Titulo from "../Titulo";
 import Conta from "../Conta";
+import Extrato from "../Extrato";
 
 const Container = styled.div`
   background-color: #f1f1f1;
@@ -20,12 +21,13 @@ const Conteudo = styled.section`
   }
 `;
 
- export default () => {
+export default () => {
   return (
     <Container>
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
+        <Extrato />
       </Conteudo>
     </Container>
   );
